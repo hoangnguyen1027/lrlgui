@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{a7352080-2a3f-467f-a1f1-0a2459021ac7}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{f086bd4c-e4f3-4706-ad02-453e99dac9e6}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{ed60f65a-0d90-44ea-9d5f-7cfa763af7f7}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="QMake Project files">
+      <UniqueIdentifier>{42e7b9a3-ebb8-480f-912e-b7e9a2f72b25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{4526311a-a8b5-4c0b-b136-a8bec0690809}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="lrlgui.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <None Include="MainWindow.ui">
+      <Filter>Source files</Filter>
+    </None>
+    <ClInclude Include="MainWindow.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <None Include="debug.pro">
+      <Filter>QMake Project files</Filter>
+    </None>
+    <None Include="release.pro">
+      <Filter>QMake Project files</Filter>
+    </None>
+    <None Include="lrlgui-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="lrlgui-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <ClCompile Include="flightComputerV4\b1_hardware.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="flightComputerV4\b1_states.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="flightComputerV4\input.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="flightComputerV4\logger.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="flightComputerV4\mainvalve.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="flightComputerV4\pinout.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="flightComputerV4\sbat.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="flightComputerV4\solenoid.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="flightComputerV4\state_machine.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lrlgui.pro" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="flightComputerV4\b1_hardware.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="flightComputerV4\b1_states.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="flightComputerV4\input.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="flightComputerV4\logger.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="flightComputerV4\mainvalve.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="flightComputerV4\pinout.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="flightComputerV4\sbat.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="flightComputerV4\solenoid.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="flightComputerV4\state_machine.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

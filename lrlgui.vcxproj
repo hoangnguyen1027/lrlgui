@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{065B886C-13B1-4EC7-8677-D5F31144F92C}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="VisualGDBPackageDefinitions">
+    <ToolchainID>com.sysprogs.toolchain.default-gcc</ToolchainID>
+  </PropertyGroup>
+  <ImportGroup Label="VisualGDBFindComponents">
+    <Import Project="$(LOCALAPPDATA)\VisualGDB\FindComponents.props" />
+  </ImportGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeIncludeSearchPath>.;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0001\linux-g++;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0000\include\arm-linux-gnueabihf\qt5;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0000\include\arm-linux-gnueabihf\qt5\QtWidgets;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0000\include\arm-linux-gnueabihf\qt5\QtGui;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0000\include\arm-linux-gnueabihf\qt5\QtCore;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0000\include\c++\6;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0000\include\arm-linux-gnueabihf\c++\6;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0000\include\c++\6\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0002\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0004\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0003\include-fixed;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0000\include\arm-linux-gnueabihf;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0000\include;Debug;flightComputerV4;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)lrlgui-Debug.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeIncludeSearchPath>.;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0001\linux-g++;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0000\include\arm-linux-gnueabihf\qt5;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0000\include\arm-linux-gnueabihf\qt5\QtWidgets;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0000\include\arm-linux-gnueabihf\qt5\QtGui;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0000\include\arm-linux-gnueabihf\qt5\QtCore;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0000\include\c++\6;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0000\include\arm-linux-gnueabihf\c++\6;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0000\include\c++\6\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0002\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0004\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0003\include-fixed;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0000\include\arm-linux-gnueabihf;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.95.43\0000\include;Release;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)lrlgui-Release.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="flightComputerV4\b1_hardware.cpp" />
+    <ClCompile Include="flightComputerV4\b1_states.cpp" />
+    <ClCompile Include="flightComputerV4\input.cpp" />
+    <ClCompile Include="flightComputerV4\logger.cpp" />
+    <ClCompile Include="flightComputerV4\mainvalve.cpp" />
+    <ClCompile Include="flightComputerV4\pinout.cpp" />
+    <ClCompile Include="flightComputerV4\sbat.cpp" />
+    <ClCompile Include="flightComputerV4\solenoid.cpp" />
+    <ClCompile Include="flightComputerV4\state_machine.cpp" />
+    <ClCompile Include="lrlgui.cpp" />
+    <ClCompile Include="MainWindow.cpp" />
+    <None Include="MainWindow.ui" />
+    <ClInclude Include="flightComputerV4\b1_hardware.h" />
+    <ClInclude Include="flightComputerV4\b1_states.h" />
+    <ClInclude Include="flightComputerV4\input.h" />
+    <ClInclude Include="flightComputerV4\logger.h" />
+    <ClInclude Include="flightComputerV4\mainvalve.h" />
+    <ClInclude Include="flightComputerV4\pinout.h" />
+    <ClInclude Include="flightComputerV4\sbat.h" />
+    <ClInclude Include="flightComputerV4\solenoid.h" />
+    <ClInclude Include="flightComputerV4\state_machine.h" />
+    <ClInclude Include="MainWindow.h" />
+    <None Include="lrlgui.pro" />
+    <None Include="debug.pro" />
+    <None Include="release.pro" />
+    <None Include="lrlgui-Debug.vgdbsettings" />
+    <None Include="lrlgui-Release.vgdbsettings" />
+  </ItemGroup>
+</Project>
