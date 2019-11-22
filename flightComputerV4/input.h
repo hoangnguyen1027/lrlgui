@@ -24,7 +24,7 @@ class b1_states;
 class state_machine;
 
 // METHODS
-int getPressureTransducerReadings(void);
+void getPressureTransducerReadings(void);
 int getUserInput(void);
 
 

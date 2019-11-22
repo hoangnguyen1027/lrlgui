@@ -63,15 +63,14 @@ int getUserInput(void) {
 	return 0;
 }
 // ... Read Pressure Transducer Data ... //
-int getPressureTransducerReadings(void)
+void getPressureTransducerReadings(void)
 {
-
 	b1_states& states = b1_states::getInstance();
 
-	input_sm.cv_isRunning.wait(lock, [] {return input_sm.isRunning(); });
+	//input_sm.cv_isRunning.wait(lock, [] {return input_sm.isRunning(); });
 	//std::cout << "Getting Pressure Transducer Readings..\n";
 	logger::info(__FILE__, "Getting Pressure Transducer Readings");
-	lock.unlock();
+	//lock.unlock();
 
 	// DATA FILE FOR LOGGING
 	std::ofstream data_file;
@@ -101,12 +100,10 @@ int getPressureTransducerReadings(void)
 	if (ads1115Setup(pinbase1, LOX_i2address) < 0) {
 		//std::cout << "Failed setting up I2C device :(\n";
 		logger::warn(__FILE__, "Failed setting up LOX I2C device :(");
-		return -1;
 	}
 	else if (ads1115Setup(pinbase2, FUE_i2address) < 0) {
 		//std::cout << "Failed setting up I2C device :(\n";
 		logger::warn(__FILE__, "Failed setting up FUE I2C device :(");
-		return -1;
 	}
 	else {
 
@@ -165,7 +162,6 @@ int getPressureTransducerReadings(void)
 
 				if (j == 0)
 				{
-
 					std::time_t time = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
 					printf("LOX_1: %.3f LOX_2: %.3f LOX_3: %.3f LOX_4: %.3f FUE_1: %.3f FUE_2: %.3f FUE_3: %.3f FUE_4: %.3f\n ", LOXpsi_0, LOXpsi_1, LOXpsi_2, LOXpsi_3,
 						FUEpsi_0, FUEpsi_1, FUEpsi_2, FUEpsi_3);
@@ -210,8 +206,6 @@ int getPressureTransducerReadings(void)
 	}
 	//std::cout << "Gathered Pressure Transducer Readings\n";
 	logger::info(__FILE__, "Gathered Pressure Transducer Readings");
-	
-	return 0;
 }
 
 void check_pt_readings(void) {

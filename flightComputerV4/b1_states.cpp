@@ -223,10 +223,10 @@ b1_states::b1_state b1_states::fn_ERROR(b1_states::b1_state nextState) {
 
 b1_states::b1_state b1_states::fn_DATA(b1_states::b1_state nextState)
 {
-	int event;
 	logger::info(__FILE__, "Reading pressure transducer data\n");
 	getPressureTransducerReadings();
 	logger::info(__FILE__, "Returning to launch sequence.");
+	return nextState;
 }
 
 // ... fn_MANUAL ... //
@@ -350,7 +350,7 @@ void b1_states::vent_FUE_pressure(void) {
 
 // ... launch countdown ... //
 void b1_states::launch_countdown(void) {
-
+	
 	for (int i = 5; i > -1; i--) {
 		std::cout << "-------------[ " << i << " ]-------------" << "\n";
 		std::this_thread::sleep_for(std::chrono::seconds(1));
